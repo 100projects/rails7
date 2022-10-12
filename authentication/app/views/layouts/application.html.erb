@@ -12,7 +12,11 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <main class=" ">
+    <% if current_user %>
+      Hi <%= current_user.email %>
+      <%= link_to "Log out", logout_path %>
+    <% end %>
       <%= yield %>
     </main>
   </body>
