@@ -74,7 +74,7 @@
     <orderEntry type="library" scope="PROVIDED" name="tailwindcss-rails (v2.0.14, RVM: ruby-3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.2.1, RVM: ruby-3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.3.0, RVM: ruby-3.0.4) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="turbo-rails (v1.3.0, RVM: ruby-3.0.4) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="turbo-rails (v1.3.1, RVM: ruby-3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.5, RVM: ruby-3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="vite_rails (v3.0.12, RVM: ruby-3.0.4) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="vite_ruby (v3.2.6, RVM: ruby-3.0.4) [gem]" level="application" />
