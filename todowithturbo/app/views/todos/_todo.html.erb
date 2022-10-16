@@ -1,0 +1,23 @@
+<div id="<%= dom_id todo %>">
+  <%= turbo_frame_tag(todo) do %>
+      <p class="my-5">
+        <strong class="block font-medium mb-1">Title:</strong>
+        <%= todo.title %>
+      </p>
+
+      <p class="my-5">
+        <% if todo.complete? %>
+            <%= button_to 'Complete' , todo_path(todo ,todo: {status:'incomplete'}) , method: :patch  , class: "rounded-lg py-3 px-5 bg-green-100 inline-block font-medium"  %>
+        <% else %>
+          <%= button_to 'incomplete' , todo_path(todo, todo:{status:'complete'}) , method: :patch  , class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium"  %>
+        <% end %>
+      </p>
+
+
+        <%= link_to 'Edit this todo', edit_todo_path(todo), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+        <%= button_to 'Delete' , todo_path(todo) , method: :delete  , class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium"  %>
+
+    <hr class="mt-6">
+
+  <% end %>
+</div>

@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/basictodo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/reactintegration" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/todowithturbo" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vueintegration" vcs="Git" />
   </component>
 </project>
