@@ -1,0 +1,33 @@
+<div id="<%= dom_id post %>">
+  <p class="my-5 trix-content">
+    <strong class="block font-medium mb-1">Title:</strong>
+    <%= post.title %>
+
+    <% if action_name == "show" %>
+      <% if post.main_image.attached? %>
+        <%= image_tag post.main_image %>
+      <% end %>
+    <% end %>
+
+    <% if action_name != "show" %>
+      <% if post.main_image.attached? %>
+        <%= image_tag post.optimized_image(post.main_image,200,300) %>
+      <% end %>
+    <% end %>
+
+
+    <%=  post.updated_at.strftime("%y %b %d") %>
+
+
+    <%= pluralize(post.view, "view")  %>
+
+    <%=  post.content %>
+
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this post", post, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this post', edit_post_path(post), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>
